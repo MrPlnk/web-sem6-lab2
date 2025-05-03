@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Резюме</title>
+</head>
+<body>
+    <main>
+        <div class="col">
+            <div class="main-info">
+                <div class="profile-picture">
+                    <img src="{{ url_for('static', filename='pic/my_photo.png') }}" alt="Фотография Артема Кривенчука">
+                </div>
+                <div class="main-info-text">
+                    <div class="main-info-name">
+                        <span>Кривенчук Артем Александрович</span>
+                    </div>
+                    <div class="main-info-prof">
+                        <span>Junior программист</span>
+                    </div>
+                    <div class="main-info-location">
+                        <span>Новосибирск (возможен переезд)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myself-info">
+                <div class="header">
+                    <span>Личная информация</span>
+                </div>
+                <div class="group">
+                    <p>
+                        <b>Гражданство:</b>
+                        <span>Российская Федерация</span>
+                    </p>
+                    <p>
+                        <b>Образование:</b>
+                        <span>Высшее неполное</span>
+                    </p>
+                    <p>
+                        <b>Дата рождения:</b>
+                        <span>22 ноября 2004 (19 лет)</span>
+                    </p>
+                    <p>
+                        <b>Пол:</b>
+                        <span>Мужской</span>
+                    </p>
+                    <p>
+                        <b>Семейное положение:</b>
+                        <span>Холост</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="header">
+                    <span>Образование</span>
+                </div>
+                <div class="group">
+                    <div class="grop-education-uni">
+                        <span>Новосибирский Государственный Технический Университет</span>
+                    </div>
+                    <div class="group-education-spec">
+                        <p>
+                            <b>Факультет:</b>
+                            <span>Прикладной Математики и Информатики</span>
+                        </p>
+                    </div>
+                    <div class="group-education-date">
+                        <p>
+                            <span>2026, очная форма обучения</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report">
+                <p>
+                    <a href="{{ url_for('report') }}">Перейти на страницу с отчетом</a>
+                </p>
+            </div>
+        </div>
+        <div class="comments-section">
+            <div class="comments-header">
+                <h3>Комментарии</h3>
+            </div>
+            <div class="comments-list">
+                <!-- Здесь будут отображаться комментарии -->
+            </div>
+            <div class="comment-form">
+                <textarea id="comment-input" placeholder="Напишите ваш комментарий..."></textarea>
+                <button id="add-comment-button">Добавить</button>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/comments.js') }}"></script>
+</body>
+</html>

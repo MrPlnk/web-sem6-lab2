@@ -1,0 +1,92 @@
+body {
+ font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ color: #333;
+}
+
+main {
+ display: flex;
+ padding: 30px;
+}
+
+.col {
+ width: 50%;
+ background-color: #fff;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ margin-right: 30px;
+}
+
+.main-info {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.main-info-name {
+ font-size: 24px;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+
+.main-info-prof {
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+
+.main-info-location {
+ font-size: 16px;
+ color: #777;
+}
+
+.myself-info, .education {
+ margin-bottom: 30px;
+}
+
+.header {
+ font-size: 18px;
+ font-weight: bold;
+ margin-bottom: 15px;
+}
+
+.group {
+ display: flex;
+ flex-direction: column;
+ margin-left: 12px;
+ padding-left: 20px;
+ border-left: 1px solid #d0d0d0;
+ margin-top: 10px;
+}
+
+.group p {
+ margin-bottom: 10px;
+}
+
+.group b {
+ font-weight: bold;
+ margin-right: 5px;
+}
+
+.group span {
+ color: #555;
+}
+
+.grop-education-uni {
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+
+.group-education-spec p,
+.group-education-date p {
+ margin: 5px 0;
+}
+
+.group-education-date p span {
+ font-style: italic;
+}
+
+.left-column > div {
+ margin-bottom: 20px;
+}

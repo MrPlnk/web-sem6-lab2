@@ -1,0 +1,67 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.paper {
+    background-color: white;
+    width: 50%;
+    padding: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.header, .content, .info, .footer {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 100px;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.other .purpose, .other .alg, .other .conc {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.other p {
+    margin-bottom: 10px;
+}
+
+.other ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.other ol li {
+    margin-bottom: 5px;
+}
